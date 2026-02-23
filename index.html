@@ -322,9 +322,9 @@
             <div class="footer-contact">
                 <h4>Контакти</h4>
                 <address>
-                    <p><strong>Адреса:</strong> вул. Хрещатик, 22, м. Київ, 01001</p>
-                    <p><strong>Телефон:</strong> <a href="tel:+380441234567">+38 (044) 123-45-67</a></p>
-                    <p><strong>Email:</strong> <a href="mailto:info@labellacucina.ua">info@labellacucina.ua</a></p>
+                    <p>📍 <strong>Адреса:</strong> вул. Хрещатик, 22, м. Київ, 01001</p>
+                    <p>📞 <strong>Телефон:</strong> <a href="tel:+380441234567">+38 (044) 123-45-67</a></p>
+                    <p>✉️ <strong>Email:</strong> <a href="mailto:info@labellacucina.ua">info@labellacucina.ua</a></p>
                 </address>
             </div>
 
@@ -343,6 +343,22 @@
         </div>
     </footer>
 
+    <script>
+        const navToggle = document.querySelector('.nav-toggle');
+        const mainNav = document.querySelector('.main-nav');
+
+        navToggle.addEventListener('click', () => {
+            const isOpen = mainNav.classList.toggle('is-open');
+            navToggle.setAttribute('aria-expanded', isOpen);
+        });
+
+        mainNav.querySelectorAll('.nav-link').forEach(link => {
+            link.addEventListener('click', () => {
+                mainNav.classList.remove('is-open');
+                navToggle.setAttribute('aria-expanded', 'false');
+            });
+        });
+    </script>
 </body>
 
 </html>
