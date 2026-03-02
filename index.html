@@ -1,0 +1,364 @@
+<!DOCTYPE html>
+<html lang="uk">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description"
+        content="La Bella Cucina — ресторан з автентичною середземноморською кухнею у серці міста. Смакуйте вишукані страви та насолоджуйтесь теплою атмосферою." />
+    <title>La Bella Cucina — Ресторан</title>
+    <link rel="stylesheet" href="styles.css" />
+</head>
+
+<body>
+
+    <header class="site-header">
+        <div class="header-inner">
+            <div class="logo">
+                <span class="logo-icon">🍽️</span>
+                <span class="logo-text">La Bella Cucina</span>
+            </div>
+            <button class="nav-toggle" aria-label="Відкрити меню" aria-expanded="false" aria-controls="main-nav">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <nav class="main-nav" id="main-nav" aria-label="Основна навігація">
+                <ul class="nav-list">
+                    <li><a href="#menu" class="nav-link">Меню</a></li>
+                    <li><a href="#chefs" class="nav-link">Наші Кухарі</a></li>
+                    <li><a href="#about" class="nav-link">Про нас</a></li>
+                    <li><a href="#footer" class="nav-cta nav-link">Контакти</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+
+        <section id="menu" class="section">
+            <div class="container">
+                <h2 class="section-title">Меню</h2>
+                <p class="section-subtitle">Вишукані страви з найкращих інгредієнтів</p>
+
+                <div class="cards-grid">
+
+                    <article class="dish-card">
+                        <img src="https://placehold.co/400x260/f5e6c8/5c3d1e?text=Карпаччо"
+                            alt="Карпаччо з яловичини" />
+                        <div class="dish-info">
+                            <h3>Карпаччо з яловичини</h3>
+                            <p class="dish-desc">Тонко нарізана телятина з пармезаном та рукколою</p>
+                            <span class="price">195 грн</span>
+                        </div>
+                    </article>
+
+                    <article class="dish-card">
+                        <img src="https://placehold.co/400x260/f5e6c8/5c3d1e?text=Різото"
+                            alt="Різото з морепродуктами" />
+                        <div class="dish-info">
+                            <h3>Різото з морепродуктами</h3>
+                            <p class="dish-desc">Кремове різото з мідіями, креветками та кальмарами</p>
+                            <span class="price">320 грн</span>
+                        </div>
+                    </article>
+
+                    <article class="dish-card">
+                        <img src="https://placehold.co/400x260/f5e6c8/5c3d1e?text=Тірамісу" alt="Тірамісу класичне" />
+                        <div class="dish-info">
+                            <h3>Тірамісу класичне</h3>
+                            <p class="dish-desc">Делікатний десерт зі смаком кави та маскарпоне</p>
+                            <span class="price">145 грн</span>
+                        </div>
+                    </article>
+
+                    <article class="dish-card">
+                        <img src="https://placehold.co/400x260/f5e6c8/5c3d1e?text=Піца+Margherita"
+                            alt="Піца Маргарита" />
+                        <div class="dish-info">
+                            <h3>Піца Маргарита</h3>
+                            <p class="dish-desc">Томатний соус, моцарела fior di latte, свіжий базилік</p>
+                            <span class="price">245 грн</span>
+                        </div>
+                    </article>
+
+                    <article class="dish-card">
+                        <img src="https://placehold.co/400x260/f5e6c8/5c3d1e?text=Мінестроне" alt="Суп Мінестроне" />
+                        <div class="dish-info">
+                            <h3>Суп Мінестроне</h3>
+                            <p class="dish-desc">Традиційний овочевий суп з пастою та пармезаном</p>
+                            <span class="price">160 грн</span>
+                        </div>
+                    </article>
+
+                    <article class="dish-card">
+                        <img src="https://placehold.co/400x260/f5e6c8/5c3d1e?text=Панакота" alt="Панакота з ягодами" />
+                        <div class="dish-info">
+                            <h3>Панакота з ягодами</h3>
+                            <p class="dish-desc">Ніжний вершковий десерт з лісовими ягодами</p>
+                            <span class="price">130 грн</span>
+                        </div>
+                    </article>
+
+                </div>
+
+                <div class="table-wrapper">
+                    <h3 class="table-title">Повний прайс-лист страв</h3>
+                    <table class="menu-table">
+                        <thead>
+                            <tr>
+                                <th>#</th>
+                                <th>Назва страви</th>
+                                <th>Категорія</th>
+                                <th>Вага/Об'єм</th>
+                                <th>Ціна</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>1</td>
+                                <td>Карпаччо з яловичини</td>
+                                <td>Закуски</td>
+                                <td>150 г</td>
+                                <td>195 грн</td>
+                            </tr>
+                            <tr>
+                                <td>2</td>
+                                <td>Брускета з томатами</td>
+                                <td>Закуски</td>
+                                <td>120 г</td>
+                                <td>110 грн</td>
+                            </tr>
+                            <tr>
+                                <td>3</td>
+                                <td>Суп Мінестроне</td>
+                                <td>Супи</td>
+                                <td>300 мл</td>
+                                <td>160 грн</td>
+                            </tr>
+                            <tr>
+                                <td>4</td>
+                                <td>Крем-суп з грибів</td>
+                                <td>Супи</td>
+                                <td>300 мл</td>
+                                <td>175 грн</td>
+                            </tr>
+                            <tr>
+                                <td>5</td>
+                                <td>Піца Маргарита</td>
+                                <td>Основні страви</td>
+                                <td>400 г</td>
+                                <td>245 грн</td>
+                            </tr>
+                            <tr>
+                                <td>6</td>
+                                <td>Різото з морепродуктами</td>
+                                <td>Основні страви</td>
+                                <td>350 г</td>
+                                <td>320 грн</td>
+                            </tr>
+                            <tr>
+                                <td>7</td>
+                                <td>Паста Карбонара</td>
+                                <td>Основні страви</td>
+                                <td>300 г</td>
+                                <td>280 грн</td>
+                            </tr>
+                            <tr>
+                                <td>8</td>
+                                <td>Тірамісу класичне</td>
+                                <td>Десерти</td>
+                                <td>200 г</td>
+                                <td>145 грн</td>
+                            </tr>
+                            <tr>
+                                <td>9</td>
+                                <td>Панакота з ягодами</td>
+                                <td>Десерти</td>
+                                <td>180 г</td>
+                                <td>130 грн</td>
+                            </tr>
+                            <tr>
+                                <td>10</td>
+                                <td>Еспресо подвійний</td>
+                                <td>Напої</td>
+                                <td>60 мл</td>
+                                <td>65 грн</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+
+            </div>
+        </section>
+
+        <section id="chefs" class="section section-alt">
+            <div class="container">
+                <h2 class="section-title">Наші Кухарі</h2>
+                <p class="section-subtitle">Майстри, що творять кулінарні шедеври кожного дня</p>
+
+                <div class="cards-grid chefs-grid">
+
+                    <article class="chef-card">
+                        <img src="https://placehold.co/300x300/d4a574/fff?text=МП" alt="Марко Поліні" />
+                        <div class="chef-info">
+                            <h3>Марко Поліні</h3>
+                            <p class="chef-role">Шеф-кухар</p>
+                            <ul class="chef-skills">
+                                <li>Середземноморська кухня</li>
+                                <li>Паста ручної роботи</li>
+                                <li>Авторські соуси</li>
+                            </ul>
+                        </div>
+                    </article>
+
+                    <article class="chef-card">
+                        <img src="https://placehold.co/300x300/d4a574/fff?text=СР" alt="Софія Романенко" />
+                        <div class="chef-info">
+                            <h3>Софія Романенко</h3>
+                            <p class="chef-role">Кондитер</p>
+                            <ul class="chef-skills">
+                                <li>Французькі десерти</li>
+                                <li>Шоколадні вироби</li>
+                                <li>Торти на замовлення</li>
+                            </ul>
+                        </div>
+                    </article>
+
+                    <article class="chef-card">
+                        <img src="https://placehold.co/300x300/d4a574/fff?text=АК" alt="Андрій Коваль" />
+                        <div class="chef-info">
+                            <h3>Андрій Коваль</h3>
+                            <p class="chef-role">Су-шеф</p>
+                            <ul class="chef-skills">
+                                <li>Гриль та барбекю</li>
+                                <li>М'ясні страви</li>
+                                <li>Fusion кухня</li>
+                            </ul>
+                        </div>
+                    </article>
+
+                    <article class="chef-card">
+                        <img src="https://placehold.co/300x300/d4a574/fff?text=ОМ" alt="Олена Мельник" />
+                        <div class="chef-info">
+                            <h3>Олена Мельник</h3>
+                            <p class="chef-role">Кухар-технолог</p>
+                            <ul class="chef-skills">
+                                <li>Вегетаріанські страви</li>
+                                <li>Здорове харчування</li>
+                                <li>Безглютенове меню</li>
+                            </ul>
+                        </div>
+                    </article>
+
+                </div>
+            </div>
+        </section>
+
+        <section id="about" class="section">
+            <div class="container">
+                <h2 class="section-title">Про нас</h2>
+
+                <div class="about-grid">
+                    <div class="about-text">
+                        <p>
+                            <strong>La Bella Cucina</strong> — це місце, де кожна страва розповідає свою історію.
+                            Заснований у 2010 році, наш ресторан став справжнім домом для цінителів середземноморської
+                            кухні в Україні.
+                        </p>
+                        <p>
+                            Ми пишаємося тим, що використовуємо виключно свіжі та сезонні інгредієнти, отримані від
+                            місцевих фермерів і перевірених постачальників. Наша кухня — це поєднання традицій Італії та
+                            Греції з авторським баченням наших шеф-кухарів.
+                        </p>
+                        <p>
+                            Затишна атмосфера, уважний персонал та бездоганна якість кожної страви — саме це робить La
+                            Bella Cucina особливим місцем для сімейних вечерь, романтичних побачень та ділових
+                            зустрічей.
+                        </p>
+                        <div class="about-stats">
+                            <div class="stat">
+                                <span class="stat-number">15+</span>
+                                <span class="stat-label">Років досвіду</span>
+                            </div>
+                            <div class="stat">
+                                <span class="stat-number">60+</span>
+                                <span class="stat-label">Страв у меню</span>
+                            </div>
+                            <div class="stat">
+                                <span class="stat-number">4.9</span>
+                                <span class="stat-label">Рейтинг гостей</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="about-map">
+                        <h3>Як нас знайти</h3>
+                        <iframe
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2540.3282370505754!2d30.52341631557537!3d50.45113647947649!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40d4ce50f8b6e3c5%3A0x6ac903f8d0588c5d!2sKhreshchatyk%20St%2C%20Kyiv!5e0!3m2!1suk!2sua!4v1615000000000!5m2!1suk!2sua"
+                            width="100%" height="320" style="border:0;" allowfullscreen="" loading="lazy"
+                            referrerpolicy="no-referrer-when-downgrade"
+                            title="Розташування ресторану La Bella Cucina на Google Maps">
+                        </iframe>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <footer class="site-footer" id="footer">
+        <div class="container footer-grid">
+
+            <div class="footer-brand">
+                <div class="logo logo-light">
+                    <span class="logo-icon">🍽️</span>
+                    <span class="logo-text">La Bella Cucina</span>
+                </div>
+                <p>Ресторан середземноморської кухні. Відкриті щодня з 11:00 до 23:00.</p>
+            </div>
+
+            <div class="footer-contact">
+                <h4>Контакти</h4>
+                <address>
+                    <p>📍 <strong>Адреса:</strong> вул. Хрещатик, 22, м. Київ, 01001</p>
+                    <p>📞 <strong>Телефон:</strong> <a href="tel:+380441234567">+38 (044) 123-45-67</a></p>
+                    <p>✉️ <strong>Email:</strong> <a href="mailto:info@labellacucina.ua">info@labellacucina.ua</a></p>
+                </address>
+            </div>
+
+            <div class="footer-hours">
+                <h4>Години роботи</h4>
+                <ul>
+                    <li><span>Пн–Пт:</span> 11:00 – 23:00</li>
+                    <li><span>Субота:</span> 10:00 – 24:00</li>
+                    <li><span>Неділя:</span> 10:00 – 22:00</li>
+                </ul>
+            </div>
+
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 La Bella Cucina. Всі права захищені.</p>
+        </div>
+    </footer>
+
+    <script>
+        const navToggle = document.querySelector('.nav-toggle');
+        const mainNav = document.querySelector('.main-nav');
+
+        navToggle.addEventListener('click', () => {
+            const isOpen = mainNav.classList.toggle('is-open');
+            navToggle.setAttribute('aria-expanded', isOpen);
+        });
+
+        mainNav.querySelectorAll('.nav-link').forEach(link => {
+            link.addEventListener('click', () => {
+                mainNav.classList.remove('is-open');
+                navToggle.setAttribute('aria-expanded', 'false');
+            });
+        });
+    </script>
+</body>
+
+</html>
