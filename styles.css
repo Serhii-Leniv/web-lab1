@@ -528,6 +528,138 @@ ul {
     color: rgba(201, 180, 154, .6);
 }
 
+/* --- Added for JS Lab --- */
+.btn-toggle {
+    background-color: var(--color-accent);
+    color: var(--color-white);
+    border: none;
+    padding: 4px 12px;
+    border-radius: var(--radius-sm);
+    cursor: pointer;
+    font-size: var(--fs-sm);
+    transition: background-color var(--transition);
+}
+
+.btn-toggle:hover {
+    background-color: var(--color-primary);
+}
+
+.ingredients-row {
+    display: none;
+    background-color: var(--color-bg-alt);
+}
+
+.ingredients-list {
+    margin: 10px 0 10px 20px;
+    list-style-type: square;
+    color: var(--color-text-muted);
+}
+
+.feedback-section {
+    margin-top: var(--space-xl);
+    background-color: var(--color-white);
+    padding: var(--space-lg);
+    border-radius: var(--radius-md);
+    box-shadow: var(--shadow-sm);
+}
+
+.feedback-section h3 {
+    font-family: var(--font-heading);
+    font-size: var(--fs-xl);
+    color: var(--color-primary);
+    margin-bottom: var(--space-md);
+}
+
+.feedback-form {
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-md);
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+}
+
+.form-group label {
+    font-weight: 500;
+    color: var(--color-text);
+}
+
+.form-group input,
+.form-group textarea {
+    padding: 10px 14px;
+    border: 1px solid var(--color-accent-lt);
+    border-radius: var(--radius-sm);
+    font-family: var(--font-body);
+    font-size: var(--fs-base);
+}
+
+.form-group input:focus,
+.form-group textarea:focus {
+    outline: none;
+    border-color: var(--color-accent);
+    box-shadow: 0 0 0 2px rgba(212, 165, 116, 0.2);
+}
+
+.form-group textarea {
+    resize: vertical;
+    min-height: 100px;
+}
+
+.btn-submit {
+    align-self: flex-start;
+    background-color: var(--color-primary);
+    color: var(--color-white);
+    border: none;
+    padding: 10px 24px;
+    border-radius: var(--radius-sm);
+    font-size: var(--fs-base);
+    font-weight: 500;
+    cursor: pointer;
+    transition: background-color var(--transition);
+}
+
+.btn-submit:hover {
+    background-color: var(--color-primary-dk);
+}
+
+.comments-container {
+    margin-top: var(--space-xl);
+}
+
+.comments-container h4 {
+    font-family: var(--font-heading);
+    font-size: var(--fs-lg);
+    color: var(--color-primary);
+    margin-bottom: var(--space-sm);
+}
+
+.comments-list {
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-sm);
+}
+
+.comments-list li {
+    background-color: var(--color-bg);
+    border-left: 4px solid var(--color-accent);
+    padding: var(--space-sm) var(--space-md);
+    border-radius: 0 var(--radius-sm) var(--radius-sm) 0;
+}
+
+.comment-author {
+    font-weight: 600;
+    color: var(--color-primary);
+    display: block;
+    margin-bottom: 4px;
+}
+
+.comment-text {
+    color: var(--color-text);
+}
+
 @media (max-width: 768px) {
     .section-title {
         font-size: var(--fs-2xl);
