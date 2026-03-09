@@ -21,13 +21,22 @@ function MenuItem({ item, isInWishlist, toggleWishlist }) {
                         className="btn-toggle"
                         style={{
                             marginLeft: '8px',
-                            backgroundColor: isInWishlist ? '#d4a574' : 'transparent',
-                            color: isInWishlist ? '#fff' : 'inherit',
-                            border: '1px solid #d4a574'
+                            backgroundColor: 'transparent',
+                            color: isInWishlist ? '#d4a574' : '#999',
+                            border: '1px solid #d4a574',
+                            borderRadius: '50%',
+                            width: '36px',
+                            height: '36px',
+                            padding: '0',
+                            display: 'inline-flex',
+                            alignItems: 'center',
+                            justifyContent: 'center',
+                            fontSize: '18px'
                         }}
                         onClick={() => toggleWishlist(item)}
+                        title={isInWishlist ? 'Видалити з вішліста' : 'Додати у вішліст'}
                     >
-                        {isInWishlist ? '❤️ У Вішлісті' : '🤍 В Вішліст'}
+                        {isInWishlist ? '❤️' : '🤍'}
                     </button>
                 </td>
             </tr>

@@ -56,9 +56,17 @@ function Menu({ wishlist, toggleWishlist }) {
                 </div>
 
                 <div className="cards-grid">
-                    {sortedItems.map((item, index) => (
-                        <DishCard key={index} item={item} />
-                    ))}
+                    {sortedItems.map((item, index) => {
+                        const isInWishlist = wishlist?.some(wItem => wItem.name === item.name);
+                        return (
+                            <DishCard
+                                key={index}
+                                item={item}
+                                isInWishlist={isInWishlist}
+                                toggleWishlist={toggleWishlist}
+                            />
+                        );
+                    })}
                 </div>
 
                 <div className="table-wrapper">
