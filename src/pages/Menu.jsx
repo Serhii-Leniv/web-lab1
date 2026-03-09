@@ -10,7 +10,7 @@ function Menu({ wishlist, toggleWishlist }) {
     const [sortOrder, setSortOrder] = useState('default'); // 'default', 'asc', 'desc'
 
     useEffect(() => {
-        fetch('/menu.json')
+        fetch(import.meta.env.BASE_URL + 'menu.json')
             .then(res => res.json())
             .then(data => setMenuItems(data))
             .catch(err => console.error('Помилка завантаження меню:', err));
